@@ -2,10 +2,6 @@ class_name State_Attack extends State
 
 var attacking : bool = false 
 
-
-@export var attack_sound : AudioStream
-@export_range(1,20,0.5) var declerate_speed : float = 5.0
-
 @onready var animation_player : AnimationPlayer = $"../../AnimationPlayer"
 @onready var idle : State = $"../Idle"
 @onready var walk : State = $"../Walk"
@@ -20,14 +16,12 @@ func Enter() -> void:
 
 #what happens when the player exits this state
 func Exit() -> void:
-	animation_player.animation_finished.disconnect( EndAttack )
-	attacking = false
 	pass
 
 
 #what happens during the _process in this state
 func Process( _delta : float ) -> State:
-	player.velocity -= player.velocity * declerate_speed * _delta
+	player.velocity = Vector2.ZERO
 	
 	if attacking == false:
 		if player.direction == Vector2.ZERO:

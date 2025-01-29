@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://gxtnad4tbum0"]
 
 [ext_resource type="Script" path="res://GUI/player-hud/heart_gui.gd" id="1_5ae8f"]
-[ext_resource type="Texture2D" uid="uid://cf5kef2v103wf" path="res://GUI/player-hud/Health_Bar_New_01282025.png" id="2_vnyhy"]
+[ext_resource type="Texture2D" uid="uid://c7mrjlttm0gjh" path="res://GUI/player-hud/Health_two-Sheet.png" id="1_ook18"]
 
 [node name="Energy" type="Control"]
 custom_minimum_size = Vector2(16, 16)
@@ -12,6 +12,7 @@ offset_bottom = 15.0
 script = ExtResource("1_5ae8f")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("2_vnyhy")
+texture = ExtResource("1_ook18")
 centered = false
-hframes = 3
+hframes = 7
+frame = 2

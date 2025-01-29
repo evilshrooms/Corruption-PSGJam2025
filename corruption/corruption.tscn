@@ -14,4 +14,4 @@ tile_map_data = PackedByteArray("AAAAAAAAAAAAAAIAAAAAAAEAAAAAAAMAAAAAAAIAAAAAAAQ
 [node name="ColorRect" type="ColorRect" parent="."]
 offset_right = 40.0
 offset_bottom = 40.0
-color = Color(1, 0.423529, 0, 1)
+color = Color(0.329079, 0.71345, 0.518702, 1)

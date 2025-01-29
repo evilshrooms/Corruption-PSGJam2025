@@ -1,44 +1,47 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1738111948
-corruption.tscn::PackedScene::3119689100271172945::1738110664::0::1::::<><>::uid://r16ot56ga20f::::res://Player/player.tscn<>uid://cqb35qlcl7tjf::::res://tile maps/sprites/Grid_room_one.tscn
-icon.svg::CompressedTexture2D::3357167108943424896::1738110664::1738111950::1::::<><>::
-::res://00_Global/::1738110664
-GlobalLevelManager.gd::GDScript::-1::1738110664::0::1::::<>Node<>::
-global_player_manager.gd::GDScript::-1::1738110664::0::1::::<>Node<>::
-::res://GeneralNodes/::1738110664
-::res://GeneralNodes/HitBox/::1738110664
-hit_box.gd::GDScript::-1::1738110664::0::1::::HitBox<>Area2D<>::
-hit_box.tscn::PackedScene::3550605394368303490::1738110664::0::1::::<><>::res://GeneralNodes/HitBox/hit_box.gd
-::res://GeneralNodes/HurtBox/::1738110664
-hurt_box.gd::GDScript::-1::1738110664::0::1::::HurtBox<>Area2D<>::
-hurt_box.tscn::PackedScene::7918154579902133151::1738110664::0::1::::<><>::res://GeneralNodes/HurtBox/hurt_box.gd
-::res://GUI/::1738111891
-::res://GUI/player-hud/::1738110664
-energy_gui.tscn::PackedScene::469790594332389401::1738110664::0::1::::<><>::res://GUI/player-hud/heart_gui.gd<>uid://c7mrjlttm0gjh::::res://GUI/player-hud/Health_two-Sheet.png
-HealthBarHalvedPipsEXP2_01252025.png::CompressedTexture2D::1372904139526328204::1738110664::1738111950::1::::<><>::
-Health_two-Sheet.png::CompressedTexture2D::7044705765862564089::1738110664::1738111950::1::::<><>::
-heart_gui.gd::GDScript::-1::1738110664::0::1::::HeartGUI<>Control<>::
-player_hud.gd::GDScript::-1::1738110664::0::1::::<>CanvasLayer<>::
-player_hud.tscn::PackedScene::525492244331610645::1738110664::0::1::::<><>::uid://c7mrjlttm0gjh::::res://GUI/player-hud/Health_two-Sheet.png<>res://GUI/player-hud/player_hud.gd<>uid://gxtnad4tbum0::::res://GUI/player-hud/energy_gui.tscn
-::res://Levels/::1738110664
-::res://Levels/Area01/::1738110664
-01.tscn::PackedScene::2939118807219916541::1738110664::0::1::::<><>::uid://cqb35qlcl7tjf::::res://tile maps/sprites/Grid_room_one.tscn
-::res://Player/::1738110664
-player.tscn::PackedScene::1248792437046867075::1738110664::0::1::::<><>::res://Player/Scripts/Player.gd<>uid://d1tgdh3hecrjq::::res://Player/Sprites/psgj2_1.png<>res://Player/Scripts/player_state_machine.gd<>res://Player/Scripts/state_idle.gd<>res://Player/Scripts/state_walk.gd<>res://Player/Scripts/PlayerCamera.gd<>res://Player/Scripts/state_attack.gd<>uid://bqt67mvfh5w4q::::res://GeneralNodes/HitBox/hit_box.tscn<>uid://dk2u34sak6i8f::::res://GeneralNodes/HurtBox/hurt_box.tscn
-::res://Player/Scripts/::1738110664
-Player.gd::GDScript::-1::1738110664::0::1::::Player<>CharacterBody2D<>::
-PlayerCamera.gd::GDScript::-1::1738110664::0::1::::PlayerCamera<>Camera2D<>::
-player_state_machine.gd::GDScript::-1::1738110664::0::1::::PlayerStateMachine<>Node<>::
-State.gd::GDScript::-1::1738110664::0::1::::State<>Node<>::
-state_attack.gd::GDScript::-1::1738110664::0::1::::State_Attack<>State<>::
-state_idle.gd::GDScript::-1::1738110664::0::1::::State_Idle<>State<>::
-state_walk.gd::GDScript::-1::1738110664::0::1::::State_Walk<>State<>::
-::res://Player/Sprites/::1738110664
-ExamplePlayerSprite.png::CompressedTexture2D::5772625352603212340::1738110664::1738111950::1::::<><>::
-psgj2_1.png::CompressedTexture2D::9023765233575060918::1738110664::1738111950::1::::<><>::
-::res://tile maps/::1738110664
-LevelTileMap.gd::GDScript::-1::1738110664::0::1::::LevelTileMap<>TileMapLayer<>::
-::res://tile maps/sprites/::1738110664
-Finished_Tiles_Adjusted_01252025.png::CompressedTexture2D::5306620919807892608::1738110664::1738111950::1::::<><>::
-Grid_room_one.tscn::PackedScene::5899681750436689331::1738110664::0::1::::<><>::uid://chutjhs50ech1::::res://tile maps/sprites/Finished_Tiles_Adjusted_01252025.png<>uid://dra1jw0gxtk04::::res://tile maps/sprites/New_Door_Tile_01252025.png<>res://tile maps/LevelTileMap.gd
-New_Door_Tile_01252025.png::CompressedTexture2D::8354068301320846879::1738110664::1738111950::1::::<><>::
+::res://::1738152258
+corruption.tscn::PackedScene::3119689100271172945::1738152258::0::1::::<><>::uid://r16ot56ga20f::::res://Player/player.tscn<>uid://cqb35qlcl7tjf::::res://tile maps/sprites/Grid_room_one.tscn
+icon.svg::CompressedTexture2D::3357167108943424896::1738113148::1738113821::1::::<><>::
+::res://00_Global/::1738113148
+GlobalLevelManager.gd::GDScript::-1::1738113148::0::1::::<>Node<>::
+global_player_manager.gd::GDScript::-1::1738113148::0::1::::<>Node<>::
+::res://GeneralNodes/::1738113148
+::res://GeneralNodes/HitBox/::1738113148
+hit_box.gd::GDScript::-1::1738113148::0::1::::HitBox<>Area2D<>::
+hit_box.tscn::PackedScene::3550605394368303490::1738113148::0::1::::<><>::res://GeneralNodes/HitBox/hit_box.gd
+::res://GeneralNodes/HurtBox/::1738113148
+hurt_box.gd::GDScript::-1::1738113148::0::1::::HurtBox<>Area2D<>::
+hurt_box.tscn::PackedScene::7918154579902133151::1738113148::0::1::::<><>::res://GeneralNodes/HurtBox/hurt_box.gd
+::res://GUI/::1738113148
+::res://GUI/player-hud/::1738152259
+energy_gui.tscn::PackedScene::469790594332389401::1738114846::0::1::::<><>::res://GUI/player-hud/heart_gui.gd<>uid://cf5kef2v103wf::::res://GUI/player-hud/Health_Bar_New_01282025.png
+HealthBarHalvedPipsEXP2_01252025.png::CompressedTexture2D::1372904139526328204::1738113148::1738113820::1::::<><>::
+Health_Bar_New_01282025.png::CompressedTexture2D::5186331536617815849::1738114678::1738114680::1::::<><>::
+Health_two-Sheet.png::CompressedTexture2D::7044705765862564089::1738113148::1738113820::1::::<><>::
+heart_gui.gd::GDScript::-1::1738113148::0::1::::HeartGUI<>Control<>::
+player_hud.gd::GDScript::-1::1738113148::0::1::::<>CanvasLayer<>::
+player_hud.tscn::PackedScene::525492244331610645::1738152259::0::1::::<><>::res://GUI/player-hud/player_hud.gd<>uid://gxtnad4tbum0::::res://GUI/player-hud/energy_gui.tscn
+::res://Levels/::1738113148
+::res://Levels/Area01/::1738113148
+01.tscn::PackedScene::2939118807219916541::1738113148::0::1::::<><>::uid://cqb35qlcl7tjf::::res://tile maps/sprites/Grid_room_one.tscn
+::res://Player/::1738176545
+player.tscn::PackedScene::1248792437046867075::1738176545::0::1::::<><>::res://Player/Scripts/Player.gd<>uid://d1tgdh3hecrjq::::res://Player/Sprites/psgj2_1.png<>res://Player/Scripts/player_state_machine.gd<>res://Player/Scripts/state_idle.gd<>res://Player/Scripts/state_walk.gd<>res://Player/Scripts/PlayerCamera.gd<>res://Player/Scripts/state_attack.gd<>uid://bqt67mvfh5w4q::::res://GeneralNodes/HitBox/hit_box.tscn<>uid://dk2u34sak6i8f::::res://GeneralNodes/HurtBox/hurt_box.tscn
+::res://Player/Scripts/::1738176589
+Player.gd::GDScript::-1::1738113148::0::1::::Player<>CharacterBody2D<>::
+PlayerCamera.gd::GDScript::-1::1738113148::0::1::::PlayerCamera<>Camera2D<>::
+player_state_machine.gd::GDScript::-1::1738113148::0::1::::PlayerStateMachine<>Node<>::
+State.gd::GDScript::-1::1738113148::0::1::::State<>Node<>::
+state_attack.gd::GDScript::-1::1738176545::0::1::::State_Attack<>State<>::
+state_idle.gd::GDScript::-1::1738113148::0::1::::State_Idle<>State<>::
+state_walk.gd::GDScript::-1::1738113148::0::1::::State_Walk<>State<>::
+::res://Player/Scripts/Audio/::1738176620
+Sword Sounds.wav::AudioStreamWAV::4473896083857115085::1738176620::1738176620::1::::<><>::
+::res://Player/Sprites/::1738113821
+ExamplePlayerSprite.png::CompressedTexture2D::5772625352603212340::1738113148::1738113820::1::::<><>::
+psgj2_1.png::CompressedTexture2D::9023765233575060918::1738113148::1738113820::1::::<><>::
+::res://tile maps/::1738113148
+LevelTileMap.gd::GDScript::-1::1738113148::0::1::::LevelTileMap<>TileMapLayer<>::
+::res://tile maps/sprites/::1738152259
+Finished_Tiles_Adjusted_01252025.png::CompressedTexture2D::5306620919807892608::1738113148::1738113820::1::::<><>::
+Grid_room_one.tscn::PackedScene::5899681750436689331::1738152258::0::1::::<><>::uid://chutjhs50ech1::::res://tile maps/sprites/Finished_Tiles_Adjusted_01252025.png<>uid://dra1jw0gxtk04::::res://tile maps/sprites/New_Door_Tile_01252025.png<>res://tile maps/LevelTileMap.gd
+New_Door_Tile_01252025.png::CompressedTexture2D::8354068301320846879::1738113148::1738113820::1::::<><>::

@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://r16ot56ga20f"]
+[gd_scene load_steps=23 format=3 uid="uid://r16ot56ga20f"]
 
 [ext_resource type="Script" path="res://Player/Scripts/Player.gd" id="1_stilv"]
 [ext_resource type="Texture2D" uid="uid://d1tgdh3hecrjq" path="res://Player/Sprites/psgj2_1.png" id="2_p7ttw"]
@@ -8,6 +8,7 @@
 [ext_resource type="Script" path="res://Player/Scripts/PlayerCamera.gd" id="6_egcn1"]
 [ext_resource type="Script" path="res://Player/Scripts/state_attack.gd" id="6_okuab"]
 [ext_resource type="PackedScene" uid="uid://bqt67mvfh5w4q" path="res://GeneralNodes/HitBox/hit_box.tscn" id="7_kdg1f"]
+[ext_resource type="AudioStream" uid="uid://b40godtr8mfdd" path="res://Player/Scripts/Audio/Sword Sounds.wav" id="7_xj4wn"]
 [ext_resource type="PackedScene" uid="uid://dk2u34sak6i8f" path="res://GeneralNodes/HurtBox/hurt_box.tscn" id="8_i6lk4"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_cj2dk"]
@@ -29,7 +30,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_6mbsf"]
 resource_name = "attack_down"
-length = 0.3
+length = 0.4
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -37,7 +38,7 @@ tracks/0/path = NodePath("Sprite2D:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.3),
+"times": PackedFloat32Array(0, 0.4),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [8, 16]
@@ -193,6 +194,7 @@ script = ExtResource("5_apbs0")
 
 [node name="Attack" type="Node" parent="StateMachine"]
 script = ExtResource("6_okuab")
+attack_sound = ExtResource("7_xj4wn")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 editor_draw_limits = true
@@ -210,3 +212,7 @@ shape = SubResource("RectangleShape2D_pdt5f")
 position = Vector2(-2.84217e-14, 6)
 rotation = -1.564
 shape = SubResource("CapsuleShape2D_qpkb8")
+
+[node name="Audio" type="Node2D" parent="."]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Audio"]

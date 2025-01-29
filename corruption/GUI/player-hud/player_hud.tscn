@@ -1,5 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://hqs1silh6db6"]
+[gd_scene load_steps=4 format=3 uid="uid://hqs1silh6db6"]
 
+[ext_resource type="Texture2D" uid="uid://c7mrjlttm0gjh" path="res://GUI/player-hud/Health_two-Sheet.png" id="1_airba"]
 [ext_resource type="Script" path="res://GUI/player-hud/player_hud.gd" id="1_jypde"]
 [ext_resource type="PackedScene" uid="uid://gxtnad4tbum0" path="res://GUI/player-hud/energy_gui.tscn" id="2_0lwq3"]
 
@@ -18,14 +19,20 @@ offset_bottom = -40.0
 grow_horizontal = 2
 grow_vertical = 2
 
+[node name="Sprite2D" type="Sprite2D" parent="Control"]
+position = Vector2(83, 50)
+texture = ExtResource("1_airba")
+region_enabled = true
+region_rect = Rect2(54, 0, 41, 16)
+
 [node name="HFlowContainer" type="HFlowContainer" parent="Control"]
 layout_mode = 0
-offset_left = 25.0
-offset_top = 40.0
-offset_right = 130.0
-offset_bottom = 87.0
+offset_left = 31.0
+offset_top = 59.0
+offset_right = 136.0
+offset_bottom = 95.0
 theme_override_constants/h_separation = 4
-theme_override_constants/v_separation = 15
+theme_override_constants/v_separation = 2
 alignment = 1
 
 [node name="Energy" parent="Control/HFlowContainer" instance=ExtResource("2_0lwq3")]

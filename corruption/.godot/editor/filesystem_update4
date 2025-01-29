@@ -1,6 +1,0 @@
-res://corruption.tscn
-res://Player/Scripts/state_attack.gd
-res://Player/player.tscn
-res://tile maps/sprites/Grid_room_one.tscn
-res://GUI/player-hud/energy_gui.tscn
-res://GUI/player-hud/player_hud.tscn

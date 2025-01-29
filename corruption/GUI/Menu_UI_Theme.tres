@@ -1,0 +1,72 @@
+[gd_resource type="Theme" load_steps=7 format=3 uid="uid://cdq5l1q078dt2"]
+
+[ext_resource type="FontFile" uid="uid://dpd8kywa317rt" path="res://GUI/menu-GUI/8-bit-hud.ttf" id="1_rf1sm"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3q6t8"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4jt8p"]
+bg_color = Color(0.576471, 1, 0.188235, 0)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.715506, 1, 0.532448, 1)
+corner_radius_top_left = 1
+corner_radius_top_right = 1
+corner_radius_bottom_right = 1
+corner_radius_bottom_left = 1
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fudlu"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.576471, 1, 0.188235, 1)
+border_blend = true
+corner_radius_top_left = 1
+corner_radius_top_right = 1
+corner_radius_bottom_right = 1
+corner_radius_bottom_left = 1
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bvwyc"]
+bg_color = Color(0.32, 0.32, 0.32, 0)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ahm4f"]
+bg_color = Color(0.22, 0.22, 0.22, 0.658824)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.576471, 1, 0.188235, 1)
+border_blend = true
+expand_margin_left = 4.0
+expand_margin_top = 4.0
+expand_margin_right = 4.0
+expand_margin_bottom = 4.0
+
+[resource]
+default_font = ExtResource("1_rf1sm")
+default_font_size = 10
+Button/colors/font_color = Color(0.576471, 1, 0.188235, 1)
+Button/colors/font_hover_pressed_color = Color(0.576471, 1, 0.188235, 1)
+Button/colors/font_pressed_color = Color(0.354715, 0.61, 0.1159, 1)
+Button/constants/outline_size = 3
+Button/styles/disabled = SubResource("StyleBoxFlat_3q6t8")
+Button/styles/focus = SubResource("StyleBoxFlat_4jt8p")
+Button/styles/hover = SubResource("StyleBoxFlat_4jt8p")
+Button/styles/normal = SubResource("StyleBoxFlat_fudlu")
+Button/styles/pressed = SubResource("StyleBoxFlat_bvwyc")
+Label/colors/font_color = Color(0.576471, 1, 0.188235, 1)
+Label/constants/outline_size = 2
+Panel/styles/panel = SubResource("StyleBoxFlat_ahm4f")
+VBoxContainer/constants/separation = 8

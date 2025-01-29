@@ -12,6 +12,7 @@ script = ExtResource("1_vhmh5")
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="Pause-menu" parent="CanvasLayer" node_paths=PackedStringArray("gameplay_manager") instance=ExtResource("2_ne584")]
+visible = false
 gameplay_manager = NodePath("../..")
 
 [node name="Corruption" type="Node2D" parent="."]

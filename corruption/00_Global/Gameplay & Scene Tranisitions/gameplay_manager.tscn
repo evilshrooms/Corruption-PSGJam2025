@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://ce4p0sqphnfdi"]
+
+[ext_resource type="Script" path="res://00_Global/Gameplay & Scene Tranisitions/GameplayManager.gd" id="1_2noek"]
+
+[node name="GameplayManager" type="Node"]
+process_mode = 3
+script = ExtResource("1_2noek")
+
+[connection signal="tree_entered" from="." to="." method="_on_tree_entered"]

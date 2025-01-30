@@ -1,10 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://dgtnd3bpfqwmy"]
+[gd_scene load_steps=5 format=3 uid="uid://dgtnd3bpfqwmy"]
 
 [ext_resource type="Texture2D" uid="uid://bwnqe8q7vtph" path="res://GUI/menu-GUI/main-menu/SimpleBackground.png" id="1_k44e7"]
 [ext_resource type="Script" path="res://GUI/menu-GUI/main-menu/main_menu.gd" id="1_kuy5d"]
 [ext_resource type="PackedScene" uid="uid://dgcv7n2vofa3h" path="res://GUI/menu-GUI/main-menu/game_title.tscn" id="2_jsimo"]
 [ext_resource type="Theme" uid="uid://cdq5l1q078dt2" path="res://GUI/Menu_UI_Theme.tres" id="2_k88br"]
-[ext_resource type="PackedScene" uid="uid://bkpg3agjrlrph" path="res://corruption.tscn" id="2_qajgj"]
 
 [node name="CanvasLayer" type="CanvasLayer"]
 
@@ -18,7 +17,7 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 script = ExtResource("1_kuy5d")
-start_scene = ExtResource("2_qajgj")
+start_scene_path = "res://corruption.tscn"
 
 [node name="TextureRect" type="TextureRect" parent="main-menu"]
 layout_mode = 1

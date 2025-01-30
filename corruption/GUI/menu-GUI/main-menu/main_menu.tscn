@@ -1,0 +1,82 @@
+[gd_scene load_steps=6 format=3 uid="uid://dgtnd3bpfqwmy"]
+
+[ext_resource type="Texture2D" uid="uid://bwnqe8q7vtph" path="res://GUI/menu-GUI/main-menu/SimpleBackground.png" id="1_k44e7"]
+[ext_resource type="Script" path="res://GUI/menu-GUI/main-menu/main_menu.gd" id="1_kuy5d"]
+[ext_resource type="PackedScene" uid="uid://dgcv7n2vofa3h" path="res://GUI/menu-GUI/main-menu/game_title.tscn" id="2_jsimo"]
+[ext_resource type="Theme" uid="uid://cdq5l1q078dt2" path="res://GUI/Menu_UI_Theme.tres" id="2_k88br"]
+[ext_resource type="PackedScene" uid="uid://bkpg3agjrlrph" path="res://corruption.tscn" id="2_qajgj"]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+
+[node name="main-menu" type="Control" parent="."]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1_kuy5d")
+start_scene = ExtResource("2_qajgj")
+
+[node name="TextureRect" type="TextureRect" parent="main-menu"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_k44e7")
+
+[node name="MarginContainer" type="MarginContainer" parent="main-menu/TextureRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 12
+
+[node name="VBoxContainer" type="VBoxContainer" parent="main-menu/TextureRect/MarginContainer"]
+layout_mode = 2
+
+[node name="Seperator" type="Control" parent="main-menu/TextureRect/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Game Title" parent="main-menu/TextureRect/MarginContainer/VBoxContainer" instance=ExtResource("2_jsimo")]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="main-menu/TextureRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="main-menu/TextureRect/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/separation = 20
+alignment = 1
+
+[node name="Seperator" type="Control" parent="main-menu/TextureRect/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Game_Start_Button" type="Button" parent="main-menu/TextureRect/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("2_k88br")
+theme_override_font_sizes/font_size = 16
+text = "Start"
+
+[node name="Game_Exit_Button" type="Button" parent="main-menu/TextureRect/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("2_k88br")
+theme_override_font_sizes/font_size = 16
+text = "Exit
+"

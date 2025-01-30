@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=4 uid="uid://bkpg3agjrlrph"]
+[gd_scene load_steps=6 format=4 uid="uid://bkpg3agjrlrph"]
 
 [ext_resource type="PackedScene" uid="uid://r16ot56ga20f" path="res://Player/player.tscn" id="1_khun4"]
 [ext_resource type="Script" path="res://GameplayManager.gd" id="1_vhmh5"]
 [ext_resource type="PackedScene" uid="uid://cqb35qlcl7tjf" path="res://tile maps/sprites/Grid_room_one.tscn" id="2_3jglj"]
 [ext_resource type="PackedScene" uid="uid://romqcvn6guyx" path="res://GUI/menu-GUI/pause-menu/pause-menu.tscn" id="2_ne584"]
+[ext_resource type="PackedScene" uid="uid://dgtnd3bpfqwmy" path="res://GUI/menu-GUI/main-menu/main_menu.tscn" id="3_mp1o0"]
 
 [node name="GameplayManager" type="Node"]
 process_mode = 3
@@ -14,6 +15,7 @@ script = ExtResource("1_vhmh5")
 [node name="Pause-menu" parent="CanvasLayer" node_paths=PackedStringArray("gameplay_manager") instance=ExtResource("2_ne584")]
 visible = false
 gameplay_manager = NodePath("../..")
+main_menu_scene = ExtResource("3_mp1o0")
 
 [node name="Corruption" type="Node2D" parent="."]
 process_mode = 1

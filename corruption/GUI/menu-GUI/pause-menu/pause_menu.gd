@@ -1,6 +1,7 @@
 extends Control
 
 @export var gameplay_manager : GameplayManager
+@export var main_menu_scene : PackedScene
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -14,10 +15,14 @@ func _on_game_manager_toggle_game_paused(is_paused):
 	else:
 		hide()
 
-
 func _on_resume_pressed():
 	gameplay_manager.game_paused = false
 
+func _on_main_menu_pressed():
+	pass
 
 func _on_quit_pressed():
 	get_tree().quit()
+
+func goto_scene():
+	pass

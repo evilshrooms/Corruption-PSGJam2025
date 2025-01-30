@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=3 uid="uid://dgcv7n2vofa3h"]
+
+[ext_resource type="Theme" uid="uid://cdq5l1q078dt2" path="res://GUI/Menu_UI_Theme.tres" id="1_usaw0"]
+
+[node name="Game Title" type="Label"]
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 46.0
+grow_horizontal = 2
+theme = ExtResource("1_usaw0")
+theme_override_colors/font_shadow_color = Color(0.1008, 0.0162, 0.27, 0.831373)
+theme_override_colors/font_outline_color = Color(0.042, 0.18, 0, 1)
+theme_override_constants/shadow_offset_x = 6
+theme_override_constants/shadow_offset_y = 10
+theme_override_constants/outline_size = 9
+theme_override_constants/shadow_outline_size = 7
+theme_override_font_sizes/font_size = 28
+text = "Corruption"
+horizontal_alignment = 1
+vertical_alignment = 1
